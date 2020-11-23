@@ -1,0 +1,53 @@
+2020-11-19 18:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO 'test'[*] ('field') VALUES ('fgjshgfhsdg')"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO 'test'[*] ('field') VALUES ('fgjshgfhsdg')"; expected "identifier"; SQL statement:
+INSERT INTO 'test' ('field') VALUES ('fgjshgfhsdg') [42001-200]
+2020-11-19 18:21:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO TEST ('field'[*]) VALUES ('trtr')"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO TEST ('field'[*]) VALUES ('trtr')"; expected "identifier"; SQL statement:
+INSERT INTO test ('field') VALUES ('trtr') [42001-200]
+2020-11-19 18:26:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Метод не разрешен для запросов. Используйте execute или executeQuery вместо executeUpdate
+Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+SELECT field FROM test [90001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.update(Prepared.java:219)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at com.company.Main.main(Main.java:45)
+2020-11-19 18:33:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Метод не разрешен для запросов. Используйте execute или executeQuery вместо executeUpdate
+Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+SELECT field FROM test [90001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.update(Prepared.java:219)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at com.company.Main.main(Main.java:58)
+2020-11-19 18:36:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Метод не разрешен для запросов. Используйте execute или executeQuery вместо executeUpdate
+Method is not allowed for a query. Use execute or executeQuery instead of executeUpdate; SQL statement:
+SELECT field FROM test [90001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.update(Prepared.java:219)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at com.company.Main.main(Main.java:58)
